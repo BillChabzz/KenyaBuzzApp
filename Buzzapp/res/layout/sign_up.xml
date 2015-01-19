@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <Button
+        android:id="@+id/cancelSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signupSu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/signupSu"
+        android:layout_marginBottom="95dp"
+        android:background="#e50000"
+        android:text="@string/cancel_sign_up"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/signupSu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelSup"
+        android:layout_alignLeft="@+id/emailSup"
+        android:layout_alignRight="@+id/emailSup"
+        android:layout_marginBottom="21dp"
+        android:background="#e50000"
+        android:onClick="signUp"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailSup"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/welcome"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/userNameSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:background="#d3d3d3"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:textColorHint="#fff" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pwordSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailSup"
+        android:layout_alignRight="@+id/emailSup"
+        android:layout_below="@+id/emailSup"
+        android:layout_marginTop="39dp"
+        android:background="#d3d3d3"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:ems="10"
+        android:hint="@string/pwrd_hint"
+        android:inputType="textPassword"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/emailSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userNameSup"
+        android:layout_marginTop="42dp"
+        android:background="#d3d3d3"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#fff" />
+
+</RelativeLayout>

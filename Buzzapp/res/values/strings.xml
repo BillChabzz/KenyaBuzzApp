@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="welcome">Create your KenyaBuzz account and enjoy local content at your finger tips.</string>
+	<string name="email_request">Insert your email to request password reset</string>
+	<string name="email_rqSubmit">Send</string>
+    <string name="app_name">Buzzapp</string>
+    <string name="user_name">User Name</string>
+    <string name="pass_word">Password</string>
+    <string name="Log_inbtn">Log in</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="e_mail">Email</string>
+    <string name="action_settings">Settings</string>
+    <string name="forgot_passwd">Forgot password?</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="pwrd_hint">Enter your password</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="cancel_sign_up">Cancel</string>
+    <string name="whatsonMtxt">Nothing on Whats On</string>
+    <string name="whatsonStxt">Whats On content coming soon.We ll Keep you updated soon.</string>
+    <!-- Drawer items -->
+    <string-array name="navigation">
+        <item>What s On</item>
+        <item>Restaurants</item>
+        <item>Movies</item>
+        <item>Other Fun</item>
+    </string-array>
+    
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    
+
+    <string-array name="Title">
+        <item>All you can eat</item>
+        <item>Italian Lounge Courses</item>
+        <item>Nairobi City Nature Tour</item>
+        <item>Sunday BBQ</item>
+        <item>Pizza Specials</item>
+        <item>The Amazing Kids Club</item>
+        <item>Churchill Live</item>
+        <item>Urban Native</item>
+        <item>PHP Meetup</item>
+        <item>Karaoke Night</item>
+        <item>Hot Salsa Fridays</item>
+        <item>African Modern Exhibition</item>
+    </string-array>
+    <string-array name="Description">
+        <item>Join us for chicken every Tuesday</item>
+        <item>Learn Italian made easy</item>
+        <item>CHeck out Nairobi Nature</item>
+        <item>Berbeque with family</item>
+        <item>Have a taste of our variety of pizza</item>
+        <item>Laughter and entertainment</item>
+        <item>DJ Namoski entertainment</item>
+        <item>Learn PHP</item>
+        <item>Singing and entertainment</item>
+        <item>Seven Lounge and Grill entertainment</item>
+        <item>Gallery collections</item>
+    </string-array>
+
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

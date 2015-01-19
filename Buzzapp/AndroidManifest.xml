@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.buzzapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kb_launcher_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- This is the main activity. It as no parent activity  -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--This is the child activity.It will be called once Intent is set true.  -->
+         <activity
+            android:name=".LoggedIn"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.buzzapp.LoggedIn" />
+                
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Sign_upActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.app.buzzapp.Sign_upActivity" />
+                <intent-filter>
+                    <action android:name="com.app.buzzapp.LoggedIn"/>
+                    
+                    <category android:name="android.intent.category.DEFAULT"/>"
+                </intent-filter>
+                
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Description"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.app.buzzapp.LoggedIn"/>
+            <intent-filter>
+                <action android:name="com.app.buzzapp.Description" />
+                <intent-filter>
+                    <action android:name="com.app.buzzapp.LoggedIn"/>
+                    
+                    <category android:name="android.intent.category.DEFAULT"/>"
+                </intent-filter>
+                
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+            
+    </application>
+
+</manifest>
